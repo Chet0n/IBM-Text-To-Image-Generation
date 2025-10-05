@@ -1,0 +1,32 @@
+Python Libraries-
+fastapi
+uvicorn
+jinja2
+torch
+torchvision
+torchaudio
+diffusers
+transformers
+accelerate
+safetensors
+
+fastapi → Web framework
+
+uvicorn → ASGI server to run FastAPI
+
+jinja2 → For rendering HTML templates
+
+torch / torchvision / torchaudio → PyTorch (needed for Stable Diffusion)
+
+diffusers → Hugging Face Diffusers library (Stable Diffusion)
+
+transformers → Required for tokenizer/model support
+
+accelerate → Optimizes GPU/CPU usage
+
+safetensors → Safe and fast model file format
+
+If you’re on CUDA (GPU), make sure to install the correct PyTorch CUDA version instead of plain torch.
+For example (for CUDA 11.8):
+
+pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118
